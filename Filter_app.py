@@ -14,6 +14,8 @@ async def Get_Filters():
 async def add_pic(req: Request):
     form = await req.form()
     for i in form.keys():
+#fffffffffff
+
         print(form[i])
         filend = form[i].filename.split(".")[-1]
         name = fr'{ form[i].filename.split(".")[0]+ str(datetime.now().strftime("_%Y-%m-%d__%H-%M-%S.")) }'
